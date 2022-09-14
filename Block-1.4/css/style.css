@@ -54,10 +54,6 @@
   flex-grow: 1;
 }
 
-.burger-menu-main {
-  margin-bottom: 268px;
-}
-
 .burger-menu-item:not(:last-child) {
   margin-bottom: 32px;
 }
