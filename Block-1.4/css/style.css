@@ -47,6 +47,13 @@
   height: 50.82px;
 }
 
+.burger-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
 .burger-menu-main {
   margin-bottom: 268px;
 }
