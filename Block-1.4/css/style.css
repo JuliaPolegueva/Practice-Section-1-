@@ -56,16 +56,22 @@
 }
 
 .burger-menu-main {
+  display: flex;
+  flex-grow: 1;
+  max-height: 416px;
   margin-bottom: 16px;
 }
 
-.burger-menu-item:not(:last-child) {
-  margin-bottom: 32px;
+.burger-menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .burger-menu-link {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   font-family: "TT Lakes", Arial, sans-serif;
   font-weight: 500;
   font-style: normal;
