@@ -5,3 +5,6 @@
 
 ## Блок 1.4
 - Блок из макета: https://juliapolegueva.github.io/Practice-Section-1-/Block-1.4/
+
+## Блок 1.5
+- Блок из макета: https://juliapolegueva.github.io/Practice-Section-1-/Block-1.5/
