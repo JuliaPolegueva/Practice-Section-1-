@@ -477,10 +477,10 @@ body {
   transition-duration: 0.5s; }
   @media (width: 360px) {
     .burger-menu {
-      z-index: 1;
       width: 360px; } }
   @media (min-width: 1366px) {
     .burger-menu {
+      z-index: 1;
       transform: translate(0px, 0px);
       padding: 30px 24px 32px 24px; } }
   .burger-menu--active {
