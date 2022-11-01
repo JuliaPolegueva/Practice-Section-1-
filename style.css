@@ -69,7 +69,8 @@ h6 {
 a,
 a:visited {
   text-decoration: none;
-  background-color: transparent; }
+  background-color: transparent;
+  color: inherit; }
 
 a:hover {
   text-decoration: none; }
