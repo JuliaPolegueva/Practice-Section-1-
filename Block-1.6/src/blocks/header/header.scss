@@ -1,0 +1,189 @@
+$color-main: #f8f8f8;
+$color-secondary: #ffffff;
+$color-decorative: #d9fff5;
+$color-decorative--bright: #41f6d7;
+$color-btn: #ff3e79;
+
+$screen-md: 768px;
+$screen-lg: 1366px;
+
+$font-family: 'TT Lakes', Arial, sans-serif;
+$font-style: normal;
+
+$font-size: 16px;
+$font-size--title: 28px;
+
+$text-color: #1b1c21;
+$text-color--muted: #7e7e82;
+
+$letter-spacing: -0.2px;
+$letter-spacing--title: -0.6px;
+
+$line-height: 24px;
+$line-height--title: 40px;
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+
+  &.--lock {
+    overflow: hidden;
+  }
+}
+
+.header {
+  background-color: $color-secondary;
+
+  &__inner {
+    min-height: 88px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px $color-decorative;
+  padding: 18.59px 16px 17.59px;
+
+  @media (min-width: $screen-md) {
+    padding: 18.59px 24px 17.59px;
+  }
+
+  @media (min-width: $screen-lg) {
+    visibility: hidden;
+    margin-top: -88px;
+    position: relative;
+  }
+
+  &__separation {
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background-color: #eaeaea;
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $color-btn;
+}
+
+.menu {
+  margin-right: 16.73px;
+
+  @media (min-width: $screen-md) {
+    margin-right: 20px;
+  }
+}
+
+.separation-1 {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    margin-right: 20.73px;
+    display: inherit;
+  }
+}
+
+.logo {
+  margin-right: auto;
+
+  &__img {
+    width: 96.55px;
+    height: 50.82px;
+  }
+}
+
+.communication {
+  display: none;
+
+  @media (min-width: $screen-md) {
+    display: inherit;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.phone {
+  &__btn {
+    margin-right: 16px;
+  }
+}
+
+.message {
+  &__btn {
+    margin-right: 16px;
+  }
+}
+
+.separation-2 {
+  margin-right: 20px;
+
+  @media (min-width: $screen-md) {
+    margin: 0 20px;
+  }
+}
+
+.service {
+  @media (min-width: $screen-lg) {
+    visibility: visible;
+    z-index: 1;
+    top: 130px;
+    right: 32px;
+    position: absolute;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    background-color: $color-secondary;
+
+    @media (min-width: $screen-lg) {
+      background-color: $color-main;
+    }
+  }
+
+  &__btn-name {
+    margin-right: 8px;
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: inherit;
+      font-family: $font-family;
+      font-weight: 500;
+      font-style: $font-style;
+      font-size: $font-size;
+      line-height: $line-height;
+      letter-spacing: $letter-spacing;
+      text-align: right;
+    }
+  }
+
+  &__btn-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.request {
+  margin-right: 16px;
+
+  @media (min-width: $screen-lg) {
+    margin-right: 32px;
+  }
+}

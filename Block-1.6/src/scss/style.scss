@@ -1,0 +1,18 @@
+@import '~normalize.css';
+
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import '../../node_modules/swiper/modules/pagination/pagination.min.css';
+
+@import './stylesheet.scss';
+@import '../blocks/header/header.scss';
+@import '../blocks/burger-menu/burger-menu.scss';
+@import '../blocks/modal-call/modal-call.scss';
+@import '../blocks/modal-feedback/modal-feedback.scss';
+
+@import '../blocks/page-main/page-main.scss';
+
+@import '../blocks/section-brands/section-brands.scss';
+@import '../blocks/section-equipment/section-equipment.scss';
+@import '../blocks/section-price/section-price.scss';
+
+@import '../blocks/footer/footer.scss';

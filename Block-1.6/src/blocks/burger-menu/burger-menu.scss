@@ -1,0 +1,235 @@
+$color-main: #f8f8f8;
+$color-secondary: #ffffff;
+$color-decorative: #d9fff5;
+$color-decorative--bright: #41f6d7;
+$color-btn: #ff3e79;
+
+$screen-md: 768px;
+$screen-lg: 1366px;
+
+$font-family: 'TT Lakes', Arial, sans-serif;
+$font-style: normal;
+
+$font-size: 16px;
+$font-size--menu: 24px;
+
+$text-color: #1b1c21;
+$text-color--muted: #7e7e82;
+
+$letter-spacing: -0.2px;
+$letter-spacing--title: -0.6px;
+
+$line-height: 24px;
+$line-height--menu: 32px;
+
+.overlay {
+  background-color: transparent;
+  transition-duration: 0.5s;
+
+  &--active {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background-color: $color-secondary;
+    opacity: 0.9;
+  }
+}
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 18.73px 24px 32px 24px;
+  min-height: 100%;
+  z-index: 5;
+  background-color: $color-secondary;
+  transform: translate(-100%, 0px);
+  transition-duration: 0.5s;
+
+  @media (width: 360px) {
+    width: 360px;
+  }
+
+  @media (min-width: $screen-lg) {
+    transform: translate(0px, 0px);
+    padding: 30px 24px 32px 24px;
+  }
+
+  &--active {
+    position: fixed;
+    top: 0;
+    transform: translate(0px, 0px);
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+    transition-duration: 0.5s;
+  }
+}
+
+.burger-menu-header {
+  margin-bottom: 50.46px;
+}
+
+.burger-menu-nav {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: $color-btn;
+  transition-duration: 1.1s;
+
+  &:hover {
+    filter: hue-rotate(130deg);
+    opacity: 50%;
+  }
+}
+
+.burger-menu-close {
+  margin-right: 16.73px;
+
+  @media (min-width: $screen-lg) {
+    display: none;
+  }
+}
+
+.logo {
+  margin-right: auto;
+
+  &__img {
+    width: 96.55px;
+    height: 50.82px;
+  }
+}
+
+.burger-menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  max-height: 100%;
+
+  @media (min-width: $screen-lg) {
+    max-height: 1024px;
+  }
+}
+
+.burger-menu-main {
+  display: flex;
+  flex-grow: 1;
+  max-height: 416px;
+  margin-bottom: 16px;
+}
+
+.burger-menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.burger-menu-link {
+  display: flex;
+  align-items: center;
+  font-family: $font-family;
+  font-weight: 500;
+  font-style: $font-style;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $text-color;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $text-color--muted;
+
+    &::before {
+      content: '';
+      background-color: $color-decorative--bright;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    height: 32px;
+    width: 4px;
+    background-color: $color-secondary;
+    border-start-end-radius: 4px;
+    border-end-end-radius: 4px;
+  }
+}
+
+.burger-menu-footer {
+  display: flex;
+  flex-direction: column;
+
+  &__email {
+    font-family: $font-family;
+    font-weight: 500;
+    font-style: $font-style;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $text-color;
+    margin-bottom: 12px;
+  }
+
+  &__tel {
+    font-family: $font-family;
+    font-weight: 700;
+    font-style: $font-style;
+    font-size: $font-size--menu;
+    line-height: $line-height--menu;
+    letter-spacing: $letter-spacing--title;
+    color: $text-color;
+    margin-bottom: 16px;
+  }
+}
+
+.burger-menu-communication {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.communication {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.lang-navigation {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 7px;
+  }
+
+  &__btn {
+    font-family: $font-family;
+    font-weight: 500;
+    font-style: $font-style;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+    color: $text-color;
+    background-color: $color-secondary;
+
+    &--active {
+      color: $text-color--muted;
+    }
+  }
+}
