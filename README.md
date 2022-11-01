@@ -9,5 +9,5 @@
 ## Блок 1.5
 - Блок из макета: https://juliapolegueva.github.io/Practice-Section-1-/Block-1.5/
 
-## CPS сервис(Блок 1.6)
+## CPS сервис (Блок 1.6)
 https://juliapolegueva.github.io/Practice-Section-1-/
