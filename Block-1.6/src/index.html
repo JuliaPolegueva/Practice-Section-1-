@@ -184,7 +184,9 @@
     <div class="modal__wrapper">
       <div class="modal__main">
         <form class="modal__form" action="#">
-          <input class="modal__input" type="tel" name="tel-number" placeholder="Телефон" required>
+          <label class="modal__label">Телефон</label>
+          <input class="modal__input modal__input-tel" type="tel" name="tel-number" placeholder="Телефон"
+            pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" required>
           <p class="modal__notice">Нажимая “отправить”, вы даете согласие на 
             <a class="modal__notice--accent" href="#" aria-label="Обработка персональных данных">
               обработку персональных данных</a> и соглашаетесь с нашей
@@ -215,9 +217,14 @@
     <div class="modal__wrapper">
       <div class="modal__main">
         <form class="modal__form" action="#">
-          <input class="modal__input" type="text" name="username" placeholder="Имя" required>
-          <input class="modal__input" type="tel" name="tel-number" placeholder="Телефон" required>
+          <label class="modal__label">Имя</label>
+          <input class="modal__input modal__input-user" type="text" name="username" placeholder="Имя" required>
+          <label class="modal__label">Телефон</label>
+          <input class="modal__input" type="tel" name="tel-number" placeholder="Телефон"
+            pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" required>
+          <label class="modal__label">Электронная почта</label>
           <input class="modal__input" type="email" name="e-mail" placeholder="Электронная почта" required>
+          <label class="modal__label">Сообщение</label>
           <textarea class="modal__input modal__input-textarea" name="message" placeholder="Сообщение"></textarea>
           <p class="modal__notice">Нажимая “отправить”, вы даете согласие на 
             <a class="modal__notice--accent" href="#" aria-label="Обработка персональных данных">

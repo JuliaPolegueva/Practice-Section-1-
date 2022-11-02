@@ -8,6 +8,9 @@ export function modalFeedbackOpen() {
   let menuBlock = document.querySelector('.burger-menu')
   let modalFeedBlock = document.querySelector('.modal-feedback')
   let modalCallBlock = document.querySelector('.modal-call')
+  let modalInputFocus = document.querySelector('.modal__input-user')
+
+  modalInputFocus.focus()
 
   modalFeedBlock.classList.toggle('modal-feedback--active')
 

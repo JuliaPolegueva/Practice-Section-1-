@@ -8,6 +8,9 @@ export function modalCallOpen() {
   let menuBlock = document.querySelector('.burger-menu')
   let modalCallBlock = document.querySelector('.modal-call')
   let modalFeedBlock = document.querySelector('.modal-feedback')
+  let modalInputFocus = document.querySelector('.modal__input-tel')
+
+  modalInputFocus.focus()
 
   modalCallBlock.classList.add('modal-call--active')
 

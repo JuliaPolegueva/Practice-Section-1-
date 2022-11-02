@@ -29,7 +29,7 @@ $line-height--text: 18px;
   background-color: $color-main;
   overflow: hidden;
   width: 100%;
-  min-height: 240px;
+  min-height: 100vh;
 
   @media (min-width: $screen-lg) {
     position: relative;

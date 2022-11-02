@@ -116,10 +116,6 @@ $line-height--menu: 32px;
   justify-content: space-between;
   flex-grow: 1;
   max-height: 100%;
-
-  @media (min-width: $screen-lg) {
-    max-height: 1024px;
-  }
 }
 
 .burger-menu-main {

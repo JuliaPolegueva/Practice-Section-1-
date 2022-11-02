@@ -94,6 +94,10 @@ $line-height--menu: 32px;
     align-items: flex-end;
   }
 
+  &__label {
+    display: none;
+  }
+
   &__input {
     width: 288px;
     height: 48px;
